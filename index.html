@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Application</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white text-center py-3">
+      <img
+        class="mx-auto w-[80px] md:w-[120px]"
+        src="./images/logo.png"
+        alt=""
+      />
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="w-full bg-[url(./images/page-title.jpg)] bg-gray-400/30 bg-cover bg-no-repeat py-20 bg-blend-overlay"
+      >
+        <div class="w-full max-w-[1280px] mx-auto px-4 text-center">
+          <h1
+            class="capitalize text-white text-4xl md:text-5xl font-bold inline-block mb-4"
+          >
+            Search your <br />
+            favourite recipe
+          </h1>
+          <p class="text-white text-balance text-base">
+            A handful of simple ingredients typify the fresh, vibrant <br />
+            flavors of Greek cooking
+          </p>
+        </div>
+      </section>
+
+      <!-- Recipe Search and Gallery -->
+      <section class="w-full">
+        <div class="w-full max-w-[1280px] mx-auto px-4 py-4">
+          <div
+            class="flex justify-center w-full md:w-[80%] lg:w-[70%] mx-auto border border-gray-300 rounded-lg mb-8 overflow-hidden"
+          >
+            <input
+              class="px-4 py-2 border-0 focus:outline-0 flex-1"
+              type="search"
+              placeholder="Search..."
+            />
+            <button class="bg-primary px-2 cursor-pointer">
+              <img
+                width="28"
+                src="./images/search-line.svg"
+                alt="search icon"
+              />
+            </button>
+          </div>
+
+          <!-- Recipe Grid -->
+          <div class="text-center">
+            <h2
+              class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-primary mb-6"
+            >
+              Latest Recipes
+            </h2>
+            <span class="loader"></span>
+            <div class="grid-minmax text-left" id="recipe-container"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+    </main>
+
+    <footer class="w-full bg-secondary">
+      <div
+        class="w-full max-w-[1280px] mx-auto px-4 py-4 text-white flex justify-between flex-wrap"
+      >
+        <p>Copyright &copy; 2023 - All right reserved</p>
+        <div class="flex gap-3">
+          <a href="https://x.com">
+            <img class="w-7" src="./images/twitter-fill.svg" alt="" />
+          </a>
+          <a href="https://youtube.com">
+            <img class="w-7" src="./images/youtube-fill.svg" alt="" />
+          </a>
+          <a href="https://facebook.com">
+            <img class="w-7" src="./images/facebook-fill.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
