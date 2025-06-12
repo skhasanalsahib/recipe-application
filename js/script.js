@@ -125,10 +125,11 @@ function debounce(fn, delay) {
   };
 }
 
-// Search Functionality
+// Search Functionality Debounce
 searchInput.addEventListener(
   "input",
   debounce(() => {
+    loader.classList.remove("hidden");
     // Clear previous recipes
     recipeContainer.innerHTML = "";
     console.log(searchInput.value);
@@ -140,6 +141,7 @@ searchInput.addEventListener(
 
 // search button
 searchForm.addEventListener("submit", (e) => {
+  loader.classList.remove("hidden");
   e.preventDefault();
   recipeContainer.innerHTML = "";
   getRecipe(
