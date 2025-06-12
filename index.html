@@ -11,7 +11,7 @@
     <!-- Header -->
     <header class="bg-white text-center py-3">
       <img
-        class="mx-auto w-[80px] md:w-[120px]"
+        class="mx-auto w-[100px] md:w-[120px]"
         src="./images/logo.png"
         alt=""
       />
@@ -39,10 +39,13 @@
       <!-- Recipe Search and Gallery -->
       <section class="w-full">
         <div class="w-full max-w-[1280px] mx-auto px-4 py-4">
-          <div
+          <!-- Search bar -->
+          <form
+            id="search-form"
             class="flex justify-center w-full md:w-[80%] lg:w-[70%] mx-auto border border-gray-300 rounded-lg mb-8 overflow-hidden"
           >
             <input
+              id="search"
               class="px-4 py-2 border-0 focus:outline-0 flex-1"
               type="search"
               placeholder="Search..."
@@ -54,7 +57,7 @@
                 alt="search icon"
               />
             </button>
-          </div>
+          </form>
 
           <!-- Recipe Grid -->
           <div class="text-center">
@@ -74,7 +77,7 @@
 
     <footer class="w-full bg-secondary">
       <div
-        class="w-full max-w-[1280px] mx-auto px-4 py-4 text-white flex justify-between flex-wrap"
+        class="w-full max-w-[1280px] mx-auto px-4 py-4 text-white flex justify-center gap-4 sm:justify-between flex-wrap"
       >
         <p>Copyright &copy; 2023 - All right reserved</p>
         <div class="flex gap-3">
