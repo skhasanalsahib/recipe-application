@@ -151,3 +151,20 @@ searchForm.addEventListener("submit", (e) => {
 
 getRecipe(`${API}?s=`);
 // document.addEventLi.pstener("DOMContentLoaded", () => {});
+
+//Go To Top
+const goToTopBtn = document.getElementById("go-to-top");
+function goToTop(e) {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+window.addEventListener("scroll", function () {
+  if (this.scrollY > 300) {
+    goToTopBtn.classList.remove("invisible");
+  } else {
+    goToTopBtn.classList.add("invisible");
+  }
+});
